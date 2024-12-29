@@ -1,35 +1,75 @@
-/* Example Custom CSS for Petango iframe */
+/* General Iframe Styling */
 body {
-    font-family: "Futura", sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* White background */
+    font-family: 'Futura', sans-serif;
+    color: #0e1e41; /* Text color */
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #333333;
+/* Card Container */
+.card {
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Clean drop shadow */
+    margin: 20px; /* Space between cards */
+    padding: 15px; /* Inner spacing */
+    background-color: #ffffff; /* Background inside cards */
 }
 
-.pet-card {
-    border: 1px solid #ddd;
+/* Pet Name Styling */
+.pet-name {
+    font-family: 'Futura Bold', sans-serif; /* Futura Bold */
+    font-size: 1.5em; /* Larger text */
+    color: #0e1e41; /* Matching text color */
+    margin-bottom: 10px; /* Space below name */
+}
+
+/* Pet Info Styling */
+.pet-info {
+    font-family: 'Futura', sans-serif; /* Regular Futura */
+    font-size: 1em; /* Smaller text */
+    color: #0e1e41; /* Matching text color */
+}
+
+/* Image Styling */
+.pet-image {
+    display: block;
+    width: 100%; /* Full width */
+    aspect-ratio: 1 / 1; /* Forces square images */
+    object-fit: cover; /* Ensures images don’t stretch */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below image */
+}
+
+/* Button Styling */
+button {
+    background-color: #0e1e41; /* Button background */
+    color: #ffffff; /* Text color */
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 10px;
-    background-color: #ffffff;
+    padding: 10px 20px; /* Button size */
+    font-family: 'Futura Bold', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-.pet-card img {
-    border-radius: 10px;
+button:hover {
+    background-color: #1e3a72; /* Slightly lighter on hover */
 }
 
-.button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Link Styling */
+a {
+    color: #0e1e41;
     text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
 }
 
-.button:hover {
-    background-color: #0056b3;
+a:hover {
+    color: #1e3a72; /* Slightly lighter on hover */
 }
