@@ -1,75 +1,63 @@
-/* General Iframe Styling */
+/* General styles */
 body {
-    background-color: #ffffff; /* White background */
     font-family: 'Futura', sans-serif;
+    background-color: #ffffff; /* Background color */
     color: #0e1e41; /* Text color */
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-/* Card Container */
-.card {
-    border: 1px solid #ffffff; /* White border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Clean drop shadow */
-    margin: 20px; /* Space between cards */
-    padding: 15px; /* Inner spacing */
-    background-color: #ffffff; /* Background inside cards */
+/* Animal name styling */
+.animal-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0e1e41;
+    margin-bottom: 10px;
 }
 
-/* Pet Name Styling */
-.pet-name {
-    font-family: 'Futura Bold', sans-serif; /* Futura Bold */
-    font-size: 1.5em; /* Larger text */
-    color: #0e1e41; /* Matching text color */
-    margin-bottom: 10px; /* Space below name */
+/* Other details styling */
+.animal-details {
+    font-size: 16px;
+    font-weight: normal;
+    color: #0e1e41;
+    line-height: 1.5;
 }
 
-/* Pet Info Styling */
-.pet-info {
-    font-family: 'Futura', sans-serif; /* Regular Futura */
-    font-size: 1em; /* Smaller text */
-    color: #0e1e41; /* Matching text color */
-}
-
-/* Image Styling */
-.pet-image {
-    display: block;
-    width: 100%; /* Full width */
-    aspect-ratio: 1 / 1; /* Forces square images */
-    object-fit: cover; /* Ensures images don’t stretch */
-    border-radius: 10px; /* Rounded corners for images */
-    margin-bottom: 15px; /* Space below image */
-}
-
-/* Button Styling */
-button {
-    background-color: #0e1e41; /* Button background */
-    color: #ffffff; /* Text color */
-    border: none;
+/* Card styling */
+.animal-card {
+    background: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    padding: 10px 20px; /* Button size */
-    font-family: 'Futura Bold', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Photo styling */
+.animal-photo {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    background-color: #0e1e41;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #1e3a72; /* Slightly lighter on hover */
-}
-
-/* Hover Effects */
-.card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-}
-
-/* Link Styling */
-a {
+    background-color: #ffffff;
     color: #0e1e41;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #1e3a72; /* Slightly lighter on hover */
+    border: 2px solid #0e1e41;
 }
